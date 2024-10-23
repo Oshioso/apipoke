@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+}
+:root {
+    --color-yellow-pikachu: #FFCB05;
+    --color-red-pokeball: #FF0000;
+    --color-blue-sky: #3B4CCA;
+    --color-white: #FFFFFF;
+    --color-gray-metallic: #A5A5A5;
+    --color-green-leaf: #48D0B0;
+}
+
+.container_pokemon{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    background-color: rgb(68, 122, 169);
+}
+
+.card_pokemon{
+    width: 100%;
+    min-width: 15vw;
+    max-width: 15vw;
+    height: auto;
+    background-color: var(--color-blue-sky);
+    border-radius: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1%;
+}
+.pokemon_img{
+    width: 80%; 
+    max-width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+.pokemon_name{
+    font-size: 80%;
+}
+.pokemon_nunber{
+    font-size: 80%;
+    color: var(--color-gray-metallic);
+}
+.pokemon_type{
+    display: flex;
+    gap: 10px;
+}
+.pokemon_type img{
+    width: 5vw;
+    margin-top: 4%;
+}
+
