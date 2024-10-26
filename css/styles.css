@@ -1,59 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Oxanium", sans-serif;
 }
+
 :root {
-    --color-yellow-pikachu: #FFCB05;
-    --color-red-pokeball: #FF0000;
-    --color-blue-sky: #3B4CCA;
-    --color-white: #FFFFFF;
-    --color-gray-metallic: #A5A5A5;
-    --color-green-leaf: #48D0B0;
+    --color-dark: #1A1A1A;             /* Cor escura para o fundo das cartas */
+    --color-yellow-pikachu: #F7EA00;   /* Amarelo vibrante */
+    --color-red-pokeball: #FF3D00;     /* Vermelho intenso */
+    --color-blue-sky: #005DAA;         /* Azul mais suave */
+    --color-white: #FFFFFF;            /* Branco puro */
+    --color-gray-metallic: #B0B0B0;    /* Cinza metálico claro */
+    --color-green-leaf: #3DDC7D;       /* Verde folha mais vibrante */
 }
 
-.container_pokemon{
+.container_pokemon {
     display: flex;
     flex-wrap: wrap; 
     gap: 20px; 
-    background-color: rgb(68, 122, 169);
+    background-color: rgb(240, 240, 240); /* Fundo da container claro */
 }
 
-.card_pokemon{
+.card_pokemon {
     width: 100%;
     min-width: 15vw;
     max-width: 15vw;
     height: auto;
-    background-color: var(--color-blue-sky);
-    border-radius: 2%;
+    background-color: var(--color-dark); /* Fundo das cartas */
+    border-radius: 2%;                    /* Levemente arredondado */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 1%;
 }
-.pokemon_img{
+
+.pokemon_img {
     width: 80%; 
     max-width: 150px; 
     height: auto; 
     margin-bottom: 10px; 
 }
-.pokemon_name{
+
+.pokemon_name {
     font-size: 80%;
+    color: var(--color-white); /* Cor do texto do nome */
 }
-.pokemon_nunber{
+
+.pokemon_number {
     font-size: 80%;
-    color: var(--color-gray-metallic);
+    color: var(--color-gray-metallic); /* Cor do número */
 }
-.pokemon_type{
+
+.pokemon_type {
     display: flex;
     gap: 10px;
 }
-.pokemon_type img{
+
+.pokemon_type img {
     width: 5vw;
     margin-top: 4%;
 }
-
