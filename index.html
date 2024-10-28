@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcionlidades por enquanto</title>
+    <title>Filtro de Tipos de Pokémon</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container_pokemon">
+    <div>
+        <input type="text" id="searchInput" placeholder="Pesquisar por nome ou ID">
+        <select id="typeFilter">
+            <option value="">Todos os Tipos</option>
+
+        </select>    
     </div>
+    
+    <div class="container_pokemon"></div>
     
     <script src="./js/script.js"></script>
 </body>
