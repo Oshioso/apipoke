@@ -24,6 +24,7 @@ const getAllPokemonTypes = async () => {
             typeFilter.appendChild(option);
         }
     });
+    
 };
 
 const fetchPokemon = async (id) => {
